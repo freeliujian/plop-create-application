@@ -1,0 +1,34 @@
+import React from "react";
+import {RouterProvider} from "react-router-dom";
+{{#includes features 'antd'}}
+import {ConfigProvider} from "antd";
+import zhCN from "antd/locale/zh_CN";
+{{/includes}}
+import router from "./routers";
+import "./App.css";
+
+function App() {
+  {{#includes features 'antd'}}
+  const theme = {
+    token: {colorPrimary: "#1b88ff"},
+  }
+  {{/includes}}
+  return (
+    <React.StrictMode>
+    {{#includes features 'antd'}}
+      <ConfigProvider
+        locale={zhCN}
+        theme={theme}
+          >
+    {{/includes}}
+
+        <RouterProvider router={router} />
+
+      {{#includes features 'antd'}}
+      </ConfigProvider>
+      {{/includes}}
+    </React.StrictMode>
+  );
+}
+
+export default App;

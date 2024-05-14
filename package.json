@@ -1,0 +1,30 @@
+{
+  "name": "plop-template",
+  "version": "1.0.0",
+  "description": "a generator of the make front-end template",
+  "main": "./dist/cli/run.js",
+  "type": "module",
+  "scripts": {
+    "tsc:build": "tsc --watch",
+    "plop": "plop",
+    "start": "node ./dist/cli/run.js"
+  },
+  "keywords": [
+    "plop"
+  ],
+  "author": "jian.liu",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chalk": "^2.2.0",
+    "@types/glob": "^8.1.0",
+    "@types/minimist": "^1.2.5",
+    "cross-env": "^7.0.3",
+    "plop": "^4.0.1",
+    "tsx": "^4.9.3"
+  },
+  "dependencies": {
+    "chalk": "4.0.0",
+    "minimist": "^1.2.8",
+    "ts-node": "^10.9.2"
+  }
+}
