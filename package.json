@@ -5,7 +5,7 @@
   "main": "./dist/cli/run.js",
   "type": "module",
   "scripts": {
-    "tsc:build": "tsc --watch",
+    "watch": "tsc --watch",
     "plop": "plop",
     "start": "node ./dist/cli/run.js"
   },
